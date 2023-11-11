@@ -11,7 +11,8 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		
+		System.out.println("Entre com os dados do contrato: ");
+		System.out.print("Número: ");
 		
 		
 		sc.close();
