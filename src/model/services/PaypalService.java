@@ -1,6 +1,6 @@
 package model.services;
 
-public class PaypalService implements onlinePaymentService{
+public class PaypalService implements OnlinePaymentService{
 	
 	// variavel que só pode ser usada nesse objeto implementado
 	private static final double FEE_PERCENTAGE = 0.02; // taxa por parcela
@@ -14,7 +14,7 @@ public class PaypalService implements onlinePaymentService{
 	}
 
 	@Override
-	public double interest(double amount, Integer months) {
+	public double interest(double amount, int months) {
 		// TODO Auto-generated method stub
 		return amount * MONTHLY_INTEREST * months;
 	}

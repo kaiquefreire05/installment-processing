@@ -8,9 +8,11 @@ public class Installment { // Installment == parcela
 	private LocalDate dueDate;
 	private Double amount;
 	
-	DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+	private static DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 	
 	// construtores
+	
+	public Installment() {}
 	
 	public Installment(LocalDate dueDate, Double amount) {
 		super();
